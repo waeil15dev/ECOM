@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- css -->
+ <style>
+    *{
+        margin: 0px;
+    }
+    .viewport{
+        background-color: rgb(192, 191, 219);
+    }
+    /* header */
+    .header{
+        text-align: center;
+        padding: 20px;
+    }
+    .Bar{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(13, 3, 99);
+        text-shadow: rgba(13, 3, 99, 0.534) 0px 0px 5px;
+    }
+    /* main */
+    .Attention{
+        background-color: rgb(13, 3, 99);
+        margin: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        border-radius: 25px;
+        box-shadow: rgb(103, 102, 117) 0px 0px 30px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        transition: margin 0.5s ease;
+    }
+    .Attention:hover{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .cool_sentence{
+        color: rgb(193, 191, 219);
+        text-shadow: rgb(192, 191, 219) 0px 0px 30px;
+        padding-top: 30px;
+    }
+    .cool_paragraph{
+        color: rgb(192, 191, 219);
+        text-shadow: rgb(192, 191, 219) 0px 0px 30px;
+        padding-top: 10px;
+    }
+    .Buy{
+        margin-top: 40px;
+        margin-right: 4%;
+        padding: 10px;
+        border: 2px solid rgb(192, 191, 219);
+        border-radius: 10px;
+        background-color: rgb(192, 191, 219);
+        box-shadow: rgba(192, 191, 219, 0) 0px 0px 0px;
+        transition: padding 0.5s ease, box-shadow 0.5s ease;
+        /* transition: box-shadow 0.5 ease; */
+    }
+    .Buy:hover{
+        padding: 12px;
+        box-shadow: rgb(192, 191, 219) 0px 0px 15px;
+    }
+    .guy{
+        height: 250px;
+        margin-bottom: -3.516px;
+    }
+    .Products{
+        padding: 30px;
+    }
+    .F_Products{
+        display: flex;
+        justify-content: space-between;
+    }
+    .featured{
+        text-decoration: none;
+        color: rgb(13, 3, 99);
+        text-shadow: rgba(13, 3, 99, 0.534) 0px 0px 30px;
+    }
+    .see{
+        padding: 10px;
+        border: 2px solid rgb(13, 3, 99);
+        border-radius: 10px;
+        box-shadow: rgba(13, 3, 99, 0) 0px 0px 0px;
+        transition: padding 0.5s ease, box-shadow 0.5s ease;
+        /* transition: box-shadow 0.5s ease; */
+    }
+    .see:hover{
+        padding-left: 12px;
+        padding-right: 12px;
+        box-shadow: rgba(13, 3, 99, 0.425) 0px 0px 10px;    
+    }
+    .examples{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .example1{
+        text-align: center;
+        background-color: rgb(126, 123, 170);
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        transition: margin 0.5s ease, box-shadow 0.5s ease;
+        /* transition: box-shadow 0.5s ease; */
+    }
+    .example1:hover{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: rgb(126, 123, 170) 0px 0px 30px;
+    }
+    .P_img{
+        height: 250px;
+    }
+    .name{
+       color: rgb(13, 3, 99);
+       text-shadow: 0px 0px 10px;
+       padding: 5px;
+    }
+    .type{
+       color: rgb(193, 191, 219);
+       text-shadow: 0px 0px 5px;
+       padding: 5px;
+
+    }
+    .price{
+        color: white;
+        text-shadow: 0px 0px 15px;
+        padding: 5px;
+    }
+    /* footer */
+    .footer{
+        text-align: center;
+        background-color: rgb(126, 123, 170);
+        border-radius: 20px; 
+        margin: 30px;
+        padding: 50px;
+        transition: margin 0.5s ease, box-shadow 0.5s ease;
+    }
+    .footer:hover{
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow:rgb(126, 123, 170) 0px 0px 30px;
+    }
+    .logo{
+        color: rgb(192, 191, 219);
+        text-shadow: 0px 0px 30px;
+        padding-bottom: 20px;
+    }
+    .infos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .email{
+        color: rgb(13, 3, 99);
+        text-shadow: 0px 0px 30px;
+        padding-top: 30px;
+    }
+    .phone{
+        color: rgb(13, 3, 99);
+        text-shadow: 0px 0px 30px;
+        padding-top: 30px;
+    }
+ </style>
+ <!-- html -->
+<body class="viewport">
+    <!-- header -->
+    <header class="header">
+        <nav class="NavBar">
+            <h1 class="logo"><a href="#ecom">SoundSphere</a></h1>
+            <ul class="Bar">
+                <li><a href="#ecom">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#abtus">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+    <div class="Attention">
+        <div>
+            <h1 class="cool_sentence">Elevate Your Audio Experience</h1>
+            <p class="cool_paragraph">Transform the way you hear the world—every beat, every note, every whisper brought to life with stunning clarity. Elevate your audio experience and feel sound the way it was truly meant to be heard.</p>
+            <button class="Buy"><a href="#Products">Buy Now</a></button>
+            <button class="Buy"><a href="#abtus">Learn More</a></button>
+        </div>
+        <div>
+            <img class="guy" src="https://static.vecteezy.com/system/resources/thumbnails/066/974/866/small/a-man-with-headphones-on-his-head-free-png.png" alt="">
+        </div>
+        
+    </div>
+    <div class="Products">
+        <div class="F_Products">
+            <h1 class="featured">Featured Products</h1>
+            <button class="see"><a href="#Products">See All Products</a></button>
+        </div>
+        <div class="examples">
+            <div class="example1">
+                <img class="P_img" src="https://png.pngtree.com/png-vector/20250612/ourmid/pngtree-modern-wireless-bluetooth-earbuds-with-charging-case-on-a-dark-background-png-image_16526282.png" alt="">
+                <h6 class="type">Earbuds</h6>
+                <h3 class="name">idk</h3>
+                <h4 class="price">249.99$</h4>
+            </div>
+            <div class="example1">
+                <img class="P_img" src="https://png.pngtree.com/png-vector/20250703/ourmid/pngtree-black-headphones-sleek-3d-render-png-image_16600605.webp" alt="">
+                <h6 class="type">Headphones</h6>
+                <h3 class="name">idk</h3>
+                <h4 class="price">324.99$</h4>
+            </div>
+            <div class="example1">
+                <img class="P_img" src="https://png.pngtree.com/png-vector/20240722/ourmid/pngtree-wireless-bluetooth-speaker-mini-outdoor-loudspeaker-subwoofer-high-volume-png-image_13213800.png" alt="">
+                <h6 class="type">Speakers</h6>
+                <h3 class="name">idk</h3>
+                <h4 class="price">199.99$</h4>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <h1 class="logo">SoundSphere</h1>
+            <div class="infos">
+                <h4 class="email">xxxxxxxx@gmail.com</h4>
+                <h4 class="phone">XXXXXXXXXX</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
