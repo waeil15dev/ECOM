@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+    }
+    .viewport{
+        background-color: rgb(192, 191, 219);
+    }
+    /* header */
+    .header{
+        text-align: center;
+        padding: 20px;
+        gap: 50px;
+    }
+    .NavBar{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .Bar{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: start;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(13, 3, 99);
+        text-shadow: rgba(13, 3, 99, 0.534) 0px 0px 5px;
+    }
+    /* main */
+    .box{
+        background-color: rgb(13, 3, 99);
+        margin: 30px;
+        padding-bottom: 0px;
+        padding-right: 30px;
+        padding-left: 30px;
+        border-radius: 25px;
+        box-shadow: rgb(103, 102, 117) 0px 0px 30px;
+        transition: margin 0.5s ease, padding 0.5s ease;
+    }
+    .box:hover{
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .title{
+        color: rgb(193, 191, 219);
+        text-shadow: rgb(192, 191, 219) 0px 0px 30px;
+        padding: 30px;
+        text-align: center;
+    }
+    .sentence{
+        color: rgb(193, 191, 219);
+        text-shadow: rgb(192, 191, 219) 0px 0px 5px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .tnx{
+        color: rgb(13, 3, 99);
+        text-shadow: rgba(13, 3, 99, 0.534) 0px 0px 5px;
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- html -->
+<body class="viewport">
+    <!-- header -->
+    <header class="header">
+        <div class="NavBarBG">
+            <nav class="NavBar">
+                <h1 class="logo"><a href="#index">SoundSphere</a></h1>
+                <ul class="Bar">
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#abtus">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="box">
+            <h1 class="title">This is the ABOUT page</h1>
+            <h3 class="sentence">SoundSphere is a modern eCommerce destination dedicated to delivering premium headphones and audio accessories that combine powerful sound, comfort, and style. We believe music and audio should be immersive and accessible to everyone, which is why we carefully select high-quality products designed for gaming, travel, work, and everyday listening. At SoundSphere, our mission is to elevate your audio experience through innovative technology, affordable prices, and customer-focused service, helping you enjoy every beat, every moment, and every sound without limits.</h3>
+        </div>
+        <h1 class="tnx">Thank you</h1>
+    </main>
+</body>
+</html>
